@@ -1,5 +1,5 @@
 body{
-    background-color: ;
+    background-color: olivedrab ;
     margin: 0;
 }
 
@@ -7,7 +7,7 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 10vh repeat(2, 1fr);
+    grid-template-rows: 10vh 40vh 1fr;
     grid-template-areas: 
     "navbar navbar navbar navbar navbar navbar"
     ". prof-pic prof-info prof-info prof-info ."
@@ -63,15 +63,25 @@ body{
 
 .post-card{
     border: 1px solid black;
-    padding: 2vh;
+    padding: 1%;
+    margin: 2vh 0;
 }
 
 .card-links{
     display: flex;
+    margin: 0 10vw;
     justify-content: space-around;
 
 }
 
 .card-links a{
-        text-decoration: none;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.card-links > a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+    
 }
